@@ -186,6 +186,8 @@ class Slurm(Base):
                     job_id, state, exitcode = res.split('|')
                     ## Skip the .batch entries if any exist
                     if '.batch' in job_id: continue
+                    ## Skip the .extern entries if any exist
+                    if '.extern' in job_id: continue
                     job_id = int(job_id)
                     job_ids.add(job_id)
                     return_states[job_id] = state
