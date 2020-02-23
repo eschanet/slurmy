@@ -6,4 +6,4 @@ Please have a look at the [documentation page](https://eschanet.github.io/slurmy
 
 ### DISCLAIMER
 
-This is a fork of the [original slurmy project](https://github.com/Thomas-Maier/slurmy) developed by Thomas Maier, which---due to the author leaving the research group---is not being maintained anymore.
+This is a fork of the [original slurmy project](https://github.com/Thomas-Maier/slurmy) developed by Thomas Maier, which&mdash;due to the author leaving the research group&mdash;is not being maintained anymore.
