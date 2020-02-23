@@ -18,9 +18,9 @@ workdir = ./
 backend = Slurm
 editor = emacs -nw
 ## Slurm backend options
-Slurm.partition = lsschaile
-#Slurm.clusters = 
-#Slurm.qos = 
+Slurm.partition = ls-schaile
+#Slurm.clusters =
+#Slurm.qos =
 #Slurm.exclude =
 #Slurm.mem =
 #Slurm.time =
@@ -59,7 +59,7 @@ If you don't create a slurmy config file specifying the batch system backend to 
 from slurmy import JobHandler, Slurm
 
 ## Set up the backend
-slurm = Slurm(partition = 'lsschaile')
+slurm = Slurm(partition = 'ls-schaile')
 ## Set up the JobHandler
 jh = JobHandler(backend = slurm)
 ## Define the run script content
@@ -68,7 +68,7 @@ echo "hans"
 """
 ## Add a job
 ### The backend can be individually set for each job
-slurm_job = Slurm(partition = 'lsschaile', mem = '6000mb')
+slurm_job = Slurm(partition = 'ls-schaile', mem = '6000mb')
 jh.add_job(backend = slurm_job, run_script = run_script)
 ## Run all jobs
 jh.run_jobs()

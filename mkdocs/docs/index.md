@@ -31,7 +31,7 @@ export PATH=~/.local/bin:$PATH
 Clone the latest stable tag or (if you're brave) master branch locally:
 
 ```shell
-git clone https://github.com/Thomas-Maier/slurmy.git
+git clone https://github.com/eschanet/slurmy.git
 LATESTTAG=$(git describe --abbrev=0 --tags)
 git co $LATESTTAG
 ```
