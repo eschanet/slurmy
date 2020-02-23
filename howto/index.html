@@ -7,13 +7,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   
+  
   <link rel="shortcut icon" href="../img/favicon.ico">
   <title>HowTo - Slurmy</title>
-  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
-  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
   
   <script>
     // Current page data
@@ -24,7 +25,7 @@
   
   <script src="../js/jquery-2.1.1.min.js" defer></script>
   <script src="../js/modernizr-2.8.3.min.js" defer></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
   <script>hljs.initHighlightingOnLoad();</script> 
   
 </head>
@@ -35,6 +36,7 @@
 
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
         <a href=".." class="icon icon-home"> Slurmy</a>
         <div role="search">
@@ -45,139 +47,43 @@
       </div>
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-	<ul class="current">
-	  
-          
-            <li class="toctree-l1">
-		
-    <span class="caption-text">Slurmy</span>
-    <ul class="subnav">
-                <li class="">
-                    
-    <a class="" href="..">Slurmy</a>
-                </li>
-                <li class=" current">
-                    
-    <a class="current" href="./">HowTo</a>
-    <ul class="subnav">
-            
-    <li class="toctree-l3"><a href="#general-usage">General Usage</a></li>
-    
-
-    <li class="toctree-l3"><a href="#what-you-want-to-do-before-doing-anything-else">What you want to do before doing anything else</a></li>
-    
-
-    <li class="toctree-l3"><a href="#snapshots">Snapshots</a></li>
-    
-
-    <li class="toctree-l3"><a href="#simple-example">Simple example</a></li>
-    
-        <ul>
-        
-            <li><a class="toctree-l4" href="#with-explicit-backend-definition">With explicit backend definition</a></li>
-        
-        </ul>
-    
-
-    <li class="toctree-l3"><a href="#using-an-already-existing-script-file-with-optional-arguments">Using an already existing script file (with optional arguments)</a></li>
-    
-
-    <li class="toctree-l3"><a href="#chaining-jobs-with-tags">Chaining Jobs with Tags</a></li>
-    
-        <ul>
-        
-            <li><a class="toctree-l4" href="#additional-uses-of-tags">Additional uses of tags</a></li>
-        
-        </ul>
-    
-
-    <li class="toctree-l3"><a href="#steering-evaluation-of-jobs-processing-status">Steering evaluation of jobs processing status</a></li>
-    
-        <ul>
-        
-            <li><a class="toctree-l4" href="#job-listener">Job listener</a></li>
-        
-            <li><a class="toctree-l4" href="#define-output-file-for-success-evaluation">Define output file for success evaluation</a></li>
-        
-            <li><a class="toctree-l4" href="#finished-and-success-trigger-in-the-run_script">FINISHED and SUCCESS trigger in the run_script</a></li>
-        
-        </ul>
-    
-
-    <li class="toctree-l3"><a href="#custom-evaluations-for-success-finished-and-post-execution">Custom evaluations for success, finished, and post-execution</a></li>
-    
-        <ul>
-        
-            <li><a class="toctree-l4" href="#regarding-class-definitions">Regarding class definitions</a></li>
-        
-        </ul>
-    
-
-    <li class="toctree-l3"><a href="#execute-job-payload-in-singularity-with-run-script-wrappers">Execute job payload in Singularity with run script wrappers</a></li>
-    
-
+                <p class="caption"><span class="caption-text">Slurmy</span></p>
+                <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="..">Slurmy</a>
+                    </li>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">HowTo</a>
+    <ul class="current">
     </ul>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../interactive_slurmy/">Interactive Slurmy</a>
-                </li>
-    </ul>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <span class="caption-text">Classes</span>
-    <ul class="subnav">
-                <li class="">
-                    
-    <a class="" href="../classes/JobHandler/">JobHandler</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../classes/JobHandlerConfig/">JobHandlerConfig</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../classes/JobContainer/">JobContainer</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../classes/Job/">Job</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../classes/JobConfig/">JobConfig</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../classes/Listener/">Listener</a>
-                </li>
-    </ul>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <span class="caption-text">Utility</span>
-    <ul class="subnav">
-                <li class="">
-                    
-    <a class="" href="../utils/SuccessTrigger/">SuccessTrigger</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../utils/FinishedTrigger/">FinishedTrigger</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../utils/LogMover/">LogMover</a>
-                </li>
-    </ul>
-	    </li>
-          
-        </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="" href="../interactive_slurmy.md">Interactive Slurmy</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Classes</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="" href="../classes/JobHandler.md">JobHandler</a>
+                    </li>
+                    <li class="toctree-l1"><a class="" href="../classes/JobHandlerConfig.md">JobHandlerConfig</a>
+                    </li>
+                    <li class="toctree-l1"><a class="" href="../classes/JobContainer.md">JobContainer</a>
+                    </li>
+                    <li class="toctree-l1"><a class="" href="../classes/Job.md">Job</a>
+                    </li>
+                    <li class="toctree-l1"><a class="" href="../classes/JobConfig.md">JobConfig</a>
+                    </li>
+                    <li class="toctree-l1"><a class="" href="../classes/Listener.md">Listener</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Utility</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="" href="../utils/SuccessTrigger.md">SuccessTrigger</a>
+                    </li>
+                    <li class="toctree-l1"><a class="" href="../utils/FinishedTrigger.md">FinishedTrigger</a>
+                    </li>
+                    <li class="toctree-l1"><a class="" href="../utils/LogMover.md">LogMover</a>
+                    </li>
+                </ul>
       </div>
-      &nbsp;
+    </div>
     </nav>
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
@@ -206,14 +112,15 @@
       
     </li>
   </ul>
+  
   <hr/>
 </div>
           <div role="main">
             <div class="section">
               
                 <h2 id="general-usage">General Usage</h2>
-<p>You can just write a piece of python code that imports the required slurmy classes (e.g. <a href="../classes/JobHandler/">JobHandler</a> and the backend class of your choice), defines jobs and calls the job submission. Job execution definitions can either be provided by already written batch shell scripts, or by defining the content of the shell script directly in your python code. For both cases, arguments that should be passed upon the execution to the scripts can also be specified.</p>
-<p>Below you'll find several examples of how your job configuration script can look like. You should also have a look at the <a href="../interactive_slurmy/">interactive slurmy</a> section to get an idea what you can do. Make sure to also take a look at the documentation of <a href="../classes/JobHandler/">JobHandler</a>, in particular <a href="../classes/JobHandler/#add_job">JobHandler.add_job()</a>.</p>
+<p>You can just write a piece of python code that imports the required slurmy classes (e.g. <a href="classes/JobHandler.md">JobHandler</a> and the backend class of your choice), defines jobs and calls the job submission. Job execution definitions can either be provided by already written batch shell scripts, or by defining the content of the shell script directly in your python code. For both cases, arguments that should be passed upon the execution to the scripts can also be specified.</p>
+<p>Below you'll find several examples of how your job configuration script can look like. You should also have a look at the <a href="interactive_slurmy.md">interactive slurmy</a> section to get an idea what you can do. Make sure to also take a look at the documentation of <a href="classes/JobHandler.md">JobHandler</a>, in particular <a href="classes/JobHandler.md#add_job">JobHandler.add_job()</a>.</p>
 <p><a name="slurmyconfig"></a></p>
 <h2 id="what-you-want-to-do-before-doing-anything-else">What you want to do before doing anything else</h2>
 <p>You can (and should) specify a slurmy config file, which defines your default configuration of relevant slurmy properties. In particular you can define which batch system backend you want to use and how it should be configured. This safes you from having to specify this every single time you want to use slurmy.</p>
@@ -223,9 +130,9 @@ workdir = ./
 backend = Slurm
 editor = emacs -nw
 ## Slurm backend options
-Slurm.partition = lsschaile
-#Slurm.clusters = 
-#Slurm.qos = 
+Slurm.partition = ls-schaile
+#Slurm.clusters =
+#Slurm.qos =
 #Slurm.exclude =
 #Slurm.mem =
 #Slurm.time =
@@ -234,8 +141,8 @@ Slurm.partition = lsschaile
 
 <p><a name="snapshots"></a></p>
 <h2 id="snapshots">Snapshots</h2>
-<p>By default, slurmy will do bookkeeping of past <a href="../classes/JobHandler/">JobHandler</a> sessions. The information is stored in a json file, which is defined in the slurmy config. Snapshot making can be deactivated by passing the respective argument to <a href="../classes/JobHandler/#JobHandler">JobHandler</a>.</p>
-<p>Snapshot making is very useful, in particular if you want to make use of <a href="../interactive_slurmy/">interactive slurmy</a>.</p>
+<p>By default, slurmy will do bookkeeping of past <a href="classes/JobHandler.md">JobHandler</a> sessions. The information is stored in a json file, which is defined in the slurmy config. Snapshot making can be deactivated by passing the respective argument to <a href="classes/JobHandler.md#JobHandler">JobHandler</a>.</p>
+<p>Snapshot making is very useful, in particular if you want to make use of <a href="interactive_slurmy.md">interactive slurmy</a>.</p>
 <h2 id="simple-example">Simple example</h2>
 <pre><code class="python">from slurmy import JobHandler
 
@@ -256,7 +163,7 @@ jh.run_jobs()
 <pre><code class="python">from slurmy import JobHandler, Slurm
 
 ## Set up the backend
-slurm = Slurm(partition = 'lsschaile')
+slurm = Slurm(partition = 'ls-schaile')
 ## Set up the JobHandler
 jh = JobHandler(backend = slurm)
 ## Define the run script content
@@ -265,7 +172,7 @@ echo &quot;hans&quot;
 &quot;&quot;&quot;
 ## Add a job
 ### The backend can be individually set for each job
-slurm_job = Slurm(partition = 'lsschaile', mem = '6000mb')
+slurm_job = Slurm(partition = 'ls-schaile', mem = '6000mb')
 jh.add_job(backend = slurm_job, run_script = run_script)
 ## Run all jobs
 jh.run_jobs()
@@ -312,14 +219,14 @@ jh.run_jobs()
 
 <p>The <code>tags</code> and <code>parent_tags</code> arguments of <code>jh.add_job()</code> can also be a list of tags, in order to assign multiple tags to a job at once.</p>
 <h3 id="additional-uses-of-tags">Additional uses of tags</h3>
-<p>Tags can also be used to just organise jobs. In <a href="../interactive_slurmy/">interactive slurmy</a> you can easily print out only jobs which have a specified tag via <a href="../classes/JobContainer/#print">JobContainer.print()</a> (i.e. <code>jh.jobs.print(tags = 'hans')</code> for the example above).</p>
+<p>Tags can also be used to just organise jobs. In <a href="interactive_slurmy.md">interactive slurmy</a> you can easily print out only jobs which have a specified tag via <a href="classes/JobContainer.md#print">JobContainer.print()</a> (i.e. <code>jh.jobs.print(tags = 'hans')</code> for the example above).</p>
 <p>Also, if you properly installed the tqdm module (see the <a href="..#Recommended Setup">recommended setup</a>), slurmy will keep track of the job progress for each tag separately in addition to the overall progress.</p>
 <h2 id="steering-evaluation-of-jobs-processing-status">Steering evaluation of jobs processing status</h2>
 <p>By default, the exitcode of the job (either taken from the local process or from the batch system bookkeeping) is taken to determine if it finished and was successful or not. However, you can change how slurmy will evaluate whether the job is finished or was successful.</p>
 <h3 id="job-listener">Job listener</h3>
-<p>First a word on what the default evaluation setup of slurmy is. In general, jobs are designed to do their status evaluations themselves, i.e. the <a href="../classes/JobHandler/">JobHandler</a> asks the job for it's status. This can get very performance heavy if this is connected to a request to the batch system accounting/bookkeeping. By default, slurmy runs a <a href="../classes/Listener/">Listener</a> to collect the job information from the batch system and set it's exitcode when it's finished. Keep in mind that setting a <code>finished_func</code> (see below) will deactivate the listener and possibly slow down the job submission cycle (if you do something processing intensive for the evaluation).</p>
+<p>First a word on what the default evaluation setup of slurmy is. In general, jobs are designed to do their status evaluations themselves, i.e. the <a href="classes/JobHandler.md">JobHandler</a> asks the job for it's status. This can get very performance heavy if this is connected to a request to the batch system accounting/bookkeeping. By default, slurmy runs a <a href="classes/Listener.md">Listener</a> to collect the job information from the batch system and set it's exitcode when it's finished. Keep in mind that setting a <code>finished_func</code> (see below) will deactivate the listener and possibly slow down the job submission cycle (if you do something processing intensive for the evaluation).</p>
 <h3 id="define-output-file-for-success-evaluation">Define output file for success evaluation</h3>
-<p>You can define the <code>output</code> of each job explicitly to change the success evaluation to check for the output to be present. From a technical side, this sets up a <a href="../classes/Listener/">Listener</a> which checks if the defined output files exist and sets the associated jobs status to SUCCESS if it finds them.</p>
+<p>You can define the <code>output</code> of each job explicitly to change the success evaluation to check for the output to be present. From a technical side, this sets up a <a href="classes/Listener.md">Listener</a> which checks if the defined output files exist and sets the associated jobs status to SUCCESS if it finds them.</p>
 <pre><code class="python">from slurmy import JobHandler
 
 ## Set up the JobHandler
@@ -334,7 +241,7 @@ jh.add_job(run_script = run_script, output = '~/hans.txt')
 jh.run_jobs()
 </code></pre>
 
-<p>The <code>output_max_attempts</code> argument of the <a href="../classes/JobHandler/">JobHandler</a> defines how many attempts are made to find the output file for a given job that is in FINISHED state. By default it is set to 5, in order to avoid delayed availability of the output file in the underlying file system.</p>
+<p>The <code>output_max_attempts</code> argument of the <a href="classes/JobHandler.md">JobHandler</a> defines how many attempts are made to find the output file for a given job that is in FINISHED state. By default it is set to 5, in order to avoid delayed availability of the output file in the underlying file system.</p>
 <h3 id="finished-and-success-trigger-in-the-run_script">FINISHED and SUCCESS trigger in the run_script</h3>
 <p>You can also set triggers in the run_script to indicate at which point in the job processing it should be considered as FINISHED and/or SUCCESS.</p>
 <pre><code class="python">from slurmy import JobHandler
@@ -357,7 +264,7 @@ jh.run_jobs()
 <p>From a technical point, <code>@SLURMY.FINISHED</code> and <code>@SLURMY.SUCCESS</code> are substituted by temporary files, which are created at these points in the script. The FINISHED/SUCCESS evaluation is then checking if these files exist. The file name associated to <code>@SLURMY.SUCCESS</code> is also set as <code>output</code>, if it's not already specified as <code>add_job</code> argument.</p>
 <h2 id="custom-evaluations-for-success-finished-and-post-execution">Custom evaluations for success, finished, and post-execution</h2>
 <p>You can define a custom finished condition by creating a dedicated class with __call__ defined. The function has to have exactly one argument, which is the config instance of the job. If <code>finished_func</code> is defined during add_job, the custom definition will be used instead of the default one during the finished evaluation.</p>
-<p>This example uses the predefined <a href="../utils/FinishedTrigger/">FinishedTrigger</a> class, which checks if the specified file exists on disk in order to evaluate whether if the job finished or not.</p>
+<p>This example uses the predefined <a href="utils/FinishedTrigger.md">FinishedTrigger</a> class, which checks if the specified file exists on disk in order to evaluate whether if the job finished or not.</p>
 <pre><code class="python">from slurmy import JobHandler, FinishedTrigger
 
 ## Set up finished evaluation class
@@ -403,8 +310,6 @@ jh.run_jobs()
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../interactive_slurmy/" class="btn btn-neutral float-right" title="Interactive Slurmy">Next <span class="icon icon-circle-arrow-right"></span></a>
-      
       
         <a href=".." class="btn btn-neutral" title="Slurmy"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
@@ -418,7 +323,7 @@ jh.run_jobs()
     
   </div>
 
-  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
 </footer>
       
         </div>
@@ -428,20 +333,23 @@ jh.run_jobs()
 
   </div>
 
-  <div class="rst-versions" role="note" style="cursor: pointer">
+  <div class="rst-versions" role="note" aria-label="versions">
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
         <span><a href=".." style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../interactive_slurmy/" style="color: #fcfcfc">Next &raquo;</a></span>
-      
     </span>
 </div>
     <script>var base_url = '..';</script>
     <script src="../js/theme.js" defer></script>
       <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
 
 </body>
 </html>
